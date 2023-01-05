@@ -8,7 +8,7 @@ Test environment
 
 ![pic](pic/000.png)
 
-Test, 32 byte output and 32 byte input, it is OK.
+Test, 32 byte output and 32 byte input, it is OK.+..
 Linkit7688 linux 3.18.109 ,There is a SPI node of /dev/spidev32766.1
 Read/write this node and access the SPI peripheral.
 Half duplex mode, The max r/w is 32 byte input and 32 byte output,
