@@ -7,8 +7,8 @@ Connecting as below picture
 Test environment
 
 ![pic](pic/000.png)
-
-
+<br>
+<br>
 Test, 32 byte output and 32 byte input, it is OK.  
 Linkit7688 linux 3.18.109 ,There is a SPI node of /dev/spidev32766.1
 Read/write this node and access the SPI peripheral.
