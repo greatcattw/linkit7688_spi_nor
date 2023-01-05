@@ -13,38 +13,38 @@ Read/write this node and access the SPI peripheral.
 Half duplex mode, The max r/w is 32 byte input and 32 byte output,
 In a word, it takes the time of 64 byte. It is not able to run loopback in the mode.
 
-![pic](pic/00.png)
+![pic](pic/00.png)<br><br><br>
   
 Test, 33 byte output and 33 byte input, it is NG.
 
-![pic](pic/01.png)
+![pic](pic/01.png)<br><br><br>
   
 Read AT45 busy flag,
 bit#7 = 1 = ready
 bit#7 = 0 = busy
 
-![pic](pic/02.png)
+![pic](pic/02.png)<br><br><br>
   
 Read chip ID = 1F 24 00 00
 
-![pic](pic/03.png)
+![pic](pic/03.png)<br><br><br>
   
 Erase full NOR chip, it takes some time.
 Check busy flag = 0 = busy
 
-![pic](pic/04.png)
+![pic](pic/04.png)<br><br><br>
   
 Ask AT45 copy date from NOR page#0 to AT45 buffer, and read AT45 buffer to linkit7688.
 Because of operation of chip erase, 256 bytes of data are 0xFF.
 
-![pic](pic/10.png)
+![pic](pic/10.png)<br><br><br>
   
 Write AT45 buffer with 00 – FF, and ask AT45 write date from buffer to AT45 NOR page#0
 
-![pic](pic/12.png)
+![pic](pic/12.png)<br><br><br>
   
 Power off system and Power on again.
 Ask AT45 copy data from NOR page#0 to AT45 buffer,and read data from AT45 buffer to linkit7688,
 All of data is kept.
 
-![pic](pic/16.png)
+![pic](pic/16.png)<br><br><br>
